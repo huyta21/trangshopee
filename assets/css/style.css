@@ -530,7 +530,11 @@
 .nav__mobile-list {
     list-style: none;
     margin-top: 40px;
+}
+
+.nav__mobile-list:first-child {
     border-top: 1px solid #999;
+
 }
 
 .nav__mobile-link {
@@ -539,6 +543,11 @@
     display: block;
     font-size: 1.4rem;
     padding: 8px 0;
+}
+
+.nav__mobile-link--separate {
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+
 }
 
 .nav__mobile-close {
@@ -592,7 +601,7 @@
 .header__logo-img{
     width: 150px;
    
-}
+}    
 
 .header__search {
     flex: 1;
@@ -1272,10 +1281,14 @@
 }
 
 .home-product-item__price {
-    display: flex;
     align-items: baseline;
-    flex-wrap: wrap;
     margin: 10px 0 8px 0;
+    overflow: hidden;
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 172px;
+    line-height: 1;
 }
 
 .home-product-item__price-old {
