@@ -121,6 +121,8 @@
     
     .header__mobile-search {
         display: block;
+        appearance: none;
+        --webkit-appearance: none;
     }
     
     .pagination-item {
